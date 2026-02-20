@@ -66,8 +66,8 @@ def progress_bar(feita_total: tuple[int, int]) -> str:
     reset_cor = "\033[0m"
 
     barra = (
-        f"{cor_barra_cheia}█{reset_cor}" * preenchido
-        + f"{cor_barra_vazia}—{reset_cor}" * (tamanho_barra - preenchido)
+        f"{cor_barra_cheia}━{reset_cor}" * preenchido
+        + f"{cor_barra_vazia}─{reset_cor}" * (tamanho_barra - preenchido)
     )
     texto = f"[{barra}] {cor_texto}{pct:.1%}\r{reset_cor}"
     return texto
