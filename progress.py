@@ -54,7 +54,7 @@ def progress_bar(feita_total: tuple[int, int]) -> str:
     if qtd_tasks != 0:
         pct = qtd_feita / qtd_tasks
     else:
-        pct = 100
+        pct = 1
 
     tamanho_barra = 40
     preenchido = int(tamanho_barra * pct)
